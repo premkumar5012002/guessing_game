@@ -12,6 +12,9 @@ fn main() {
 
             let mut guess_number = String::new();
 
+            // &mut guess_number is a mutable reference
+            // `&` represents that we are passing reference of the guess_number to the function.
+            // `mut` represents that reference can be mutated
             io::stdin()
                 .read_line(&mut guess_number)
                 .expect("Unable to read line!");
